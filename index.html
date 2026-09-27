@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkJTfY7gqk6wUgJ8VTFTfwzdV4VmLbmpXVbJ8n9u_vpgtSPkn_sgBGA54&s=10">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Μεζέ από την Πόλη - Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cloudflare.com">
+
+</head>
+<body>
+
+<!-- Header / Hero Background -->
+<header class="restaurant-header">
+        <!-- ΔΙΑΚΡΙΤΙΚΑ SOCIAL & CONTACT ΣΤΗΝ ΠΑΝΩ ΔΕΞΙΑ ΓΩΝΙΑ (SVG VERSION) -->
+<div class="top-right-socials">
+    <!-- Instagram -->
+    <a href="https://instagram.com/meze_apo_tin_poli" target="_blank" class="top-social-btn" title="Instagram">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+    </a>
+    
+    <!-- Facebook -->
+    <a href="http://facebook.com/mezeapotinpoli" target="_blank" class="top-social-btn" title="Facebook">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+    </a>
+
+    <!-- Τηλέφωνο -->
+    <a href="tel:2392023680" class="top-social-btn phone-top" title="Καλέστε μας">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill: none;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        <span class="phone-number-text">2392 023680</span>
+    </a>
+</div>
+
+    <div class="logo-container">
+        <span class="sub-title">Αυθεντικές Γεύσεις</span>
+        <h1>Μεζέ από την Πόλη</h1>
+        <p class="theme-tag">δια χειρός Ολυμπίας</p>
+        <div class="ornament">❖ ❖ ❖ ❖ ❖</div>
+    </div>
+
+
+
+</header>
+
+    <!-- Navigation Tabs -->
+    <nav class="menu-tabs">
+        <button class="tab-btn active" onclick="switchPage(1)">
+            <span class="tab-text">Κρύα & Σαλάτες</span>
+        </button>
+        <button class="tab-btn" onclick="switchPage(2)">
+            <span class="tab-text">Ζεστοί Μεζέδες</span>
+        </button>
+        <button class="tab-btn" onclick="switchPage(3)">
+            <span class="tab-text">Κυρίως Πιάτα</span>
+        </button>
+        <button class="tab-btn" onclick="switchPage(4)">
+            <span class="tab-text">Ποτά</span>
+        </button>
+        
+    
+    </nav>
+
+    
+    <!-- Main Content Container -->
+    <main class="menu-container">
+    
+        <!-- PAGE 1: ΚΡΥΟΙ ΜΕΖΕΔΕΣ & ΣΑΛΑΤΕΣ -->
+        <section id="page-1" class="menu-page active">
+            <div class="category-block">
+                <h2 class="category-title">Κρύοι Μεζέδες</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-main">
+                            <span class="item-name">Ποικιλία Πιάτων της Τάβλας μας</span>
+                            <span class="item-price">3,00 €</span>
+                        </div>
+                        <p class="item-desc">Επιλογή από χειροποίητα μεζεδάκια μαγειρεμένα με μεράκι και αγνά υλικά.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-main">
+                            <span class="item-name">Ψωμί (ανά άτομο)</span>
+                            <span class="item-price">1,00 €</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-block">
+                <h2 class="category-title">Σαλάτες</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-main">
+                            <span class="item-name">Αγγουροντομάτα</span>
+                            <span class="item-price">5,00 €</span>
+                        </div>
+                        <p class="item-desc">Σαλάτα με αγγούρι, ντομάτα, κρεμμύδι και μαϊντανό.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-main">
+                            <span class="item-name">Βραστά Χόρτα (Εποχής) ή Βραστά Λαχανικά</span>
+                            <span class="item-price">6,00 €</span>
+                        </div>
+                        <p class="item-desc">Βλίτα ή ζοχιά / Μπρόκολο ή κουνουπίδι ή λαχανίδα ή παντζάρι.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-main">
+                            <span class="item-name">Πράσινη</span>
+                            <span class="item-price">5,00 €</span>
+                        </div>
+                        <p class="item-desc">Μαρουλοσαλάτα με φρέσκο κρεμμύδι και άνηθο.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-main">
+                            <span class="item-name">Ντάκος </span>
+                            <span class="item-price">7,00 €</span>
+                        </div>
+                        <span class="allergen-tag">Λακτόζη</span>
+                        <p class="item-desc">Παραδοσιακή σαλάτα με φρέσκια ντομάτα, παξιμάδι, φέτα (Π.Ο.Π.) και κάπαρη.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-main">
+                            <span class="item-name">Χωριάτικη </span>
+                            <span class="item-price">8,50 €</span>
+                        </div>
+                        <span class="allergen-tag">Λακτόζη</span>
+                        <p class="item-desc">Παραδοσιακή Ελληνική σαλάτα με αγγούρι, ντομάτα, πιπεριά, κρεμμύδι, μαϊντανό, ελιές και τυρί φέτα (Π.Ο.Π.).</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-main">
+                            <span class="item-name">Πολίτικη</span>
+                            <span class="item-price">6,00 €</span>
+                        </div>
+                        <p class="item-desc">Λάχανο, καρότο, πιπεριά Φλωρίνης, σέλινο.</p>
+                    </div>
+                    <div class="menu-item highlight-item">
+                        <div class="item-main">
+                            <span class="item-name">Χειμωνιάτικη Σαλάτα </span>
+                            <span class="item-price">10,00 €</span>
+                        </div>
+                        <span class="allergen-tag">Σινάπι</span>
+                        <p class="item-desc">Δροσερή σαλάτα με κόκκινο λάχανο, καρότο, κρεμμύδι, ρόδι, αβοκάντο, φιλέτο πορτοκάλι και σως λεμόνι ελαιόλαδο, μουστάρδα και σουμάκ.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-main">
+                            <span class="item-name">Ψητά Λαχανικά</span>
+                            <span class="item-price">7,00 €</span>
+                        </div>
+                        <p class="item-desc">Καλοκαιρινά λαχανικά στη σχάρα με ελαιόλαδο και κρέμα βαλσάμικο.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 2: ΖΕΣΤΟΙ ΜΕΖΕΔΕΣ & ΟΡΕΚΤΙΚΑ -->
+        <section id="page-2" class="menu-page">
+            <div class="category-block">
+                <h2 class="category-title">Ζεστοί Μεζέδες & Ορεκτικά</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-main">
+                            <span class="item-name">Πατάτες Τηγανητές</span>
+                            <span class="item-price">3,50 €</span>
+                        </div>
+                        <p class="item-desc">Φρέσκια πατάτα τηγανητή.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-main">
+                            <span class="item-name">Κολοκυθάκια Τηγανητά </span>
+                            <span class="item-price">4,00 €</span>
+                        </div>
+                        <span class="allergen-tag">Γλουτένη / Λακτόζη</span>
+                        <p class="item-desc">Συνοδεύονται με χειροποίητο τζατζίκι.</p>
+                    </div>
+                    <div class="menu-item highlight-item">
+                        <div class="item-main">
+                            <span class="item-name">Μουσβέρια </span>
+                            <span class="item-price">6,00 €</span>
+                        </div>
+                        <span class="allergen-tag">Γλουτένη / Αυγό / Λακτόζη</span>
+                        <p class="item-desc">Πολίτικοι κολοκυθοκεφτέδες. Συνοδεύονται με χειροποίητο τζατζίκι.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-main">
+                            <span class="item-name">Τυροκροκέτες</span>
+                            <span class="item-price">5,00 €</span>
+                        </div>
+                        <span class="allergen-tag">Γλουτένη / Αυγό / Λακτόζη</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-main">
+                            <span class="item-name">Ταλαγάνι </span>
+                            <span class="item-price">5,00 €</span>
+                        </div>
+                        <span class="allergen-tag">Λακτόζη</span>
+                        <p class="item-desc">Παραδοσιακό τυρί ψητό, σερβίρεται με χειροποίητη μαρμελάδα.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-main">
+                            <span class="item-name">Μαστέλο Χίου </span>
+                            <span class="item-price">7,00 €</span>
+                        </div>
+                        <span class="allergen-tag">Λακτόζη</span>
+                    </div>
+                    <div class="menu-item highlight-item">
+                        <div class="item-main">
+                            <span class="item-name">Φέτα Περέκ</span>
+                            <span class="item-price">7,00 €</span>
+                        </div>
+                        <span class="allergen-tag">Γλουτένη / Λακτόζη / Σουσάμι</span>
+                        <p class="item-desc">Φέτα (Π.Ο.Π.) σκεπασμένη με φύλλο Περέκ, σερβίρεται με μέλι και μαύρο σουσάμι.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-main">
+                            <span class="item-name">Μπουγιουρντί </span>
+                            <span class="item-price">5,00 €</span>
+                        </div>
+                        <span class="allergen-tag">Λακτόζη</span>
+                        <p class="item-desc">Φέτα (Π.Ο.Π.), ντομάτα, πιπεριά και τριμμένο τυρί gouda.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-main">
+                            <span class="item-name">Σκουμπρί Καπνιστό</span>
+                            <span class="item-price">6,00 €</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- PAGE 3: ΚΥΡΙΩΣ ΠΙΑΤΑ (Αντικαθιστά το Κυρίως & Ποτά) -->
+<div id="page-3" class="menu-page">
+    
+    <!-- ΕΚΛΕΚΤΑ ΠΟΛΙΤΙΚΑ ΠΙΑΤΑ -->
+    <div class="category-block">
+        <h2 class="category-title">Εκλεκτά Πολίτικα Πιάτα</h2>
+        <div class="menu-items">
+            
+            <!-- ΝΕΟ ΠΙΑΤΟ -->
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Μύδια Ντολμά </span>
+                    <span class="item-price">9,00 €</span>
+                </div>
+                <span class="allergen-tag">Ξηροί Καρποί</span>
+                <div class="item-desc">Φρέσκα μύδια με γέμιση ρυζιού μαγειρεμένο με διάφορα μπαχαρικά, κουκουνάρι, σταφίδα και αρωματικά βότανα.</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Αρναούτ Τζιέρι</span>
+                    <span class="item-price">8,50 €</span>
+                </div>
+                <div class="item-desc">Φρέσκο μοσχαρίσιο συκώτι σοταρισμένο με ελαιόλαδο και σερβιρισμένο με καραμελωμένα κρεμμύδια.</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Σουτζούκι με Σάλτσα</span>
+                    <span class="item-price">6,00 €</span>
+                </div>
+                <div class="item-desc">Σουτζούκι (Πολίτικο αλλαντικό) σε σάλτσα φρέσκιας ντομάτας.</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Παστουρμαδοπιτάκια</span>
+                    <span class="item-price">6,00 €</span>
+                </div>
+                <span class="allergen-tag">Γλουτένη / Λακτόζη</span>
+                <div class="item-desc">Σε χωριάτικο χειροποίητο φύλλο.</div>
+            </div>
+
+            <!-- ΝΕΟ ΠΙΑΤΟ -->
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Αυγά με Σουτζούκι </span>
+                    <span class="item-price">6,00 €</span>
+                </div>
+                <span class="allergen-tag">Αυγό</span>
+                <div class="item-desc">Αυγά στο τηγάνι με ελαιόλαδο και σουτζούκι.</div>
+            </div>
+
+            <!-- ΝΕΟ ΠΙΑΤΟ -->
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Αυγά με Παστουρμά</span>
+                    <span class="item-price">6,00 €</span>
+                </div>
+                <span class="allergen-tag">Αυγό</span>
+                <div class="item-desc">Αυγά τηγανητά με ελαιόλαδο και παστουρμά.</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Λαχματζούν</span>
+                    <span class="item-price">8,50 €</span>
+                </div>
+                <span class="allergen-tag">Γλουτένη / Λακτόζη</span>
+                <div class="item-desc">Χειροποίητη πίτα με μοσχαρίσιο κιμά, σερβίρεται με κρεμμύδι και μαϊντανό, συνοδεύεται με γιαούρτι.</div>
+            </div>
+
+            <div class="menu-item highlight-item">
+                <div class="item-main">
+                    <span class="item-name">Γιαουρτλού Κεμπάπ </span>
+                    <span class="item-price">12,00 €</span>
+                </div>
+                <span class="allergen-tag">Γλουτένη / Λακτόζη</span>
+                <div class="item-desc">Παραδοσιακό πιάτο με πίτα, σάλτσα φρέσκιας ντομάτας, μπιφτεκάκια από πρόβειο και μοσχαρίσιο κιμά, σως γιαουρτιού, κρεμμύδι και μαϊντανό, το πιάτο ολοκληρώνεται με φρέσκο βούτυρο.</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Μοσχαρίσιο Κεμπάπ</span>
+                    <span class="item-price">15,00 €</span>
+                </div>
+                <span class="allergen-tag">Θειώδη / Γλουτένη / Λακτόζη</span>
+                <div class="item-desc">Μοσχαράκι μαριναρισμένο με κρασί ψήνεται με κομμάτια μελιτζάνας, σερβίρεται με πλιγούρι και ντοματίνια στο ελαιόλαδο.</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Σις Ταούκ </span>
+                    <span class="item-price">9,00 €</span>
+                </div>
+                <span class="allergen-tag">Λακτόζη / Σινάπι</span>
+                <div class="item-desc">Παραδοσιακό μαριναρισμένο σουβλάκι κοτόπουλο στη σχάρα με γαρνιτούρα ημέρας.</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Τζιζμπίζια</span>
+                    <span class="item-price">8,50 €</span>
+                </div>
+                <span class="allergen-tag">Γλουτένη / Αυγό</span>
+                <div class="item-desc">Πολίτικα σουτζουκάκια από πρόβειο και μοσχαρίσιο κιμά με γαρνιτούρα ημέρας.</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Κεφτεδάκια της Γιαγιάς</span>
+                    <span class="item-price">8,00 €</span>
+                </div>
+                <span class="allergen-tag">Γλουτένη / Αυγό</span>
+                <div class="item-desc">Κλασικά κεφτεδάκια με μοσχαρίσιο και χοιρινό κιμά, μαϊντανό, δυόσμο, ούζο, κρεμμύδι με γαρνιτούρα ημέρας.</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Χοιρινά Φιλετίνια </span>
+                    <span class="item-price">10,00 €</span>
+                </div>
+                <span class="allergen-tag">Λακτόζη</span>
+                <div class="item-desc">Με κρέμα γάλακτος και μανιτάρια.</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Μουσακάς Σπιτικός </span>
+                    <span class="item-price">12,00 €</span>
+                </div>
+                <span class="allergen-tag">Λακτόζη / Αυγό / Γλουτένη</span>
+                <div class="item-desc">Πατάτες, μελιτζάνες, μοσχαρίσιος κιμάς, μπεσαμέλ με φρέσκο γάλα.</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Παστίτσιο </span>
+                    <span class="item-price">10,00 €</span>
+                </div>
+                <span class="allergen-tag">Λακτόζη / Αυγό / Γλουτένη</span>
+                <div class="item-desc">Μακαρόνια, μοσχαρίσιος κιμάς, μπεσαμέλ με φρέσκο γάλα.</div>
+            </div>
+
+        </div>
+        <p style="text-align: center; margin-top: 30px; font-family: 'Marcellus', serif; color: var(--burgundy); font-weight: 600; letter-spacing: 1px; font-size: 1.1rem; border-top: 1px dashed var(--gold); padding-top: 20px;">
+            <u>ΡΩΤΗΣΤΕ ΜΑΣ ΓΙΑ ΤΑ ΠΙΑΤΑ ΗΜΕΡΑΣ</u>
+        </p>
+    </div> 
+
+
+    <!-- ΕΝΟΤΗΤΑ 2: ΘΑΛΑΣΣΙΝΑ (Από τη φωτογραφία σας) -->
+    <div class="category-block">
+        <h2 class="category-title">Θαλασσινά</h2>
+        <div class="menu-items">
+            
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Γαύρος Τηγάνι </span>
+                    <span class="item-price">7,00 €</span>
+                </div>
+                <span class="allergen-tag">Γλουτένη</span>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Γαύρος Σαγανάκι </span>
+                    <span class="item-price">7,00 €</span>
+                </div>
+                <span class="allergen-tag">Σινάπι / Θειώδη</span>
+                <div class="item-desc">Με κρεμμύδι, πιπεριά σβησμένο με λευκό κρασί ή πλούσια σάλτσα φρέσκιας ντομάτας (καυτερό ή όχι).</div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Σαρδέλα Σχάρας</span>
+                    <span class="item-price">7,00 €</span>
+                </div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Σουπιά Πολίτικη </span>
+                    <span class="item-price">9,00 €</span>
+                </div>
+                <span class="allergen-tag">Ξηροί Καρποί</span>
+                <div class="item-desc">Μαγειρεμένη με κουκουνάρι και σταφίδα.</div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Καλαμάρι Τηγανητό</span>
+                    <span class="item-price">12,00 €</span>
+                </div>
+                <span class="allergen-tag">Γλουτένη</span>
+                <div class="item-desc">Ελληνικό καλαμάρι.</div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Καλαμάρι Σχάρας ή Γεμιστό </span>
+                    <span class="item-price">45,00 € / Κιλό</span>
+                </div>
+                <span class="allergen-tag">Λακτόζη</span>
+                <div class="item-desc">Ελληνικό καλαμάρι.</div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Γαρίδες Ελληνικές Σαγανάκι ή Σχάρας </span>
+                    <span class="item-price">75,00 € / Κιλό</span>
+                </div>
+                <span class="allergen-tag">Λακτόζη</span>
+                <div class="item-desc">Νωπές γαρίδες με κρεμμύδι, πιπεριά, σάλτσα φρέσκιας ντομάτας και φέτα ή σχάρας.</div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Γαρίδες* Σαγανάκι ή Σχάρας </span>
+                    <span class="item-price">12,00 €</span>
+                </div>
+                <span class="allergen-tag">Λακτόζη</span>
+                <div class="item-desc">Γαρίδες ιχθυοκαλλιέργειας με κρεμμύδι, πιπεριά, σάλτσα φρέσκιας ντομάτας και φέτα ή σχάρας.</div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Χταπόδι* Σχάρας</span>
+                    <span class="item-price">12,00 €</span>
+                </div>
+                <div class="item-desc">Ελληνικό χταπόδι, ψητό στη σχάρα.</div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Μύδια Αχνιστά (με κέλυφος)</span>
+                    <span class="item-price">9,00 €</span>
+                </div>
+                <div class="item-desc">Φρέσκα μύδια μαγειρεμένα με το ζουμί τους.</div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Μύδια Σαγανάκι </span>
+                    <span class="item-price">9,00 €</span>
+                </div>
+                <span class="allergen-tag">Σινάπι</span>
+                <div class="item-desc">Φρέσκα μύδια με λευκή ή κόκκινη σάλτσα, φέτα (Π.Ο.Π.), κρεμμυδάκι και πιπεριά (η λευκή σάλτσα περιέχει σινάπι).</div>
+            </div>
+        
+        </div>
+        
+        <!-- Υποσημείωση Φρέσκων Ψαριών -->
+        <p style="text-align: center; margin-top: 30px; font-family: 'Marcellus', serif; color: var(--burgundy); font-weight: 600; letter-spacing: 1px; font-size: 1.1rem; border-top: 1px dashed var(--gold); padding-top: 20px;">
+            <u>ΡΩΤΗΣΤΕ ΜΑΣ ΓΙΑ ΤΑ ΦΡΕΣΚΑ ΨΑΡΙΑ ΗΜΕΡΑΣ</u>
+        </p>
+    </div>
+</div>
+
+<!-- PAGE 4: ΠΟΤΑ -->
+<div id="page-4" class="menu-page">
+    
+    <!-- ΕΝΟΤΗΤΑ: ΚΡΑΣΙΑ -->
+    <div class="category-block">
+        <h2 class="category-title">Κρασιά</h2>
+
+        <h3 style="font-family: 'Marcellus', serif; color: var(--gold); margin: 20px 0 10px; font-size: 1.3rem; text-transform: uppercase; letter-spacing: 1px;">Χύμα Κρασί</h3>
+        <div class="menu-items" style="margin-bottom: 30px;">
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Κρασί χύμα (λευκό, ροζέ, κόκκινο) 0,5L</span>
+                    <span class="item-price">4,50 €</span>
+                </div>
+                <div class="item-desc">Χύμα κρασί Νέας Μεσημβρίας (Ξηρό ή Ημίγλυκο)</div>
+            </div>
+        </div>
+        
+        <h3 style="font-family: 'Marcellus', serif; color: var(--gold); margin: 20px 0 10px; font-size: 1.3rem; text-transform: uppercase; letter-spacing: 1px;">Λευκά</h3>
+        <div class="menu-items" style="margin-bottom: 30px;">
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Οινοποιείου Βούλγαρη 0,75L</span>
+                    <span class="item-price">20,00 €</span>
+                </div>
+                <div class="item-desc">Sauvignon blanc - Ασύρτικο / Ασύρτικο - Μαλαγουζιά</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Κτήμα Λειβαδιώτη</span>
+                    <span class="item-price">20,00 €</span>
+                </div>
+                <div class="item-desc">Ασύρτικο / Μαλαγουζιά / Sauvignon Blanc</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Κτήμα Γεροβασιλείου 0,75L</span>
+                    <span class="item-price">30,00 €</span>
+                </div>
+                <div class="item-desc">Μαλαγουζιά</div>
+            </div>
+        </div>
+
+        <h3 style="font-family: 'Marcellus', serif; color: var(--gold); margin: 20px 0 10px; font-size: 1.3rem; text-transform: uppercase; letter-spacing: 1px;">Ροζέ</h3>
+        <div class="menu-items" style="margin-bottom: 30px;">
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Οινοποιείου Βούλγαρη 0,75L</span>
+                    <span class="item-price">20,00 €</span>
+                </div>
+                <div class="item-desc">Grenache / Merlot</div>
+            </div>
+        </div>
+
+        <h3 style="font-family: 'Marcellus', serif; color: var(--gold); margin: 20px 0 10px; font-size: 1.3rem; text-transform: uppercase; letter-spacing: 1px;">Κόκκινο</h3>
+        <div class="menu-items" style="margin-bottom: 30px;">
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Οινοποιείου Βούλγαρη 0,75L</span>
+                    <span class="item-price">20,00 €</span>
+                </div>
+                <div class="item-desc">Merlot</div>
+            </div>
+        </div>
+
+
+        <h3 style="font-family: 'Marcellus', serif; color: var(--gold); margin: 20px 0 10px; font-size: 1.3rem; text-transform: uppercase; letter-spacing: 1px;">Ρετσίνες</h3>
+        <div class="menu-items">
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Βασιλική 0,5L</span>
+                    <span class="item-price">4,00 €</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Μαλαματίνα 0,5L</span>
+                    <span class="item-price">4,00 €</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Κεχριμπάρι 0,5L</span>
+                    <span class="item-price">5,50 €</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ΕΝΟΤΗΤΑ: ΤΣΙΠΟΥΡΟ / ΟΥΖΟ -->
+    <div class="category-block">
+        <h2 class="category-title">Τσίπουρο / Ούζο</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Προϊόν διήμερης απόσταξης 200ml</span>
+                    <span class="item-price">6,00 €</span>
+                </div>
+                <div class="item-desc">Ντόπιο τσίπουρο με γλυκάνισο ή χωρίς</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Τσίπουρο Αποστολάκη 200ml</span>
+                    <span class="item-price">8,00 €</span>
+                </div>
+                <div class="item-desc">Με γλυκάνισο ή χωρίς</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Τσίπουρο Ηδωνικό 200ml</span>
+                    <span class="item-price">8,00 €</span>
+                </div>
+                <div class="item-desc">Με γλυκάνισο ή χωρίς</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Τσίπουρο Μπαμπατζίμ 200ml</span>
+                    <span class="item-price">8,00 €</span>
+                </div>
+                <div class="item-desc">Με γλυκάνισο ή χωρίς</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Ούζο Πλωμαρίου 200ml</span>
+                    <span class="item-price">8,00 €</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Ούζο Βαρβαγιάννη 200ml</span>
+                    <span class="item-price">8,00 €</span>
+                </div>
+                <div class="item-desc">Μπλε (46%) ή Πράσινο (42%)</div>
+            </div>
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Ούζο Μπαμπατζίμ 200ml</span>
+                    <span class="item-price">8,00 €</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Ούζο Ηδωνικό 200ml</span>
+                    <span class="item-price">8,00 €</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Ούζο Ματαρέλη 200ml</span>
+                    <span class="item-price">9,00 €</span>
+                </div>
+            </div>
+            <div class="menu-item highlight-item">
+                <div class="item-main">
+                    <span class="item-name">Yeni Raki 200ml</span>
+                    <span class="item-price">12,00 €</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ΕΝΟΤΗΤΑ: ΜΠΥΡΕΣ -->
+    <div class="category-block">
+        <h2 class="category-title">Μπύρες</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Βεργίνα 500ml</span>
+                    <span class="item-price">4,00 €</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">RED Βεργίνα 500ml</span>
+                    <span class="item-price">5,00 €</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">WEISS Βεργίνα 500ml</span>
+                    <span class="item-price">5,00 €</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Μπύρα free 500ml</span>
+                    <span class="item-price">4,00 €</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Fisher 500ml</span>
+                    <span class="item-price">4,00 €</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Heineken 500ml</span>
+                    <span class="item-price">4,00 €</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Kaiser 500ml</span>
+                    <span class="item-price">4,00 €</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Amstel radler 500ml</span>
+                    <span class="item-price">4,00 €</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Μύθος 500ml</span>
+                    <span class="item-price">4,00 €</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Βαρέλι 0,350L</span>
+                    <span class="item-price">3,50 €</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Βαρέλι 0,5L</span>
+                    <span class="item-price">4,00 €</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ΕΝΟΤΗΤΑ: ΑΝΑΨΥΚΤΙΚΑ -->
+    <div class="category-block">
+        <h2 class="category-title">Αναψυκτικά</h2>
+        <div class="menu-items">
+            
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Νερό 1,5L</span>
+                    <span class="item-price">1,00 €</span>
+                </div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Ξινό Νερό 700ml</span>
+                    <span class="item-price">3,50 €</span>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Ελληνικός καφές μονός</span>
+                    <span class="item-price">3,00 €</span>
+                </div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Ελληνικός καφές διπλός</span>
+                    <span class="item-price">3,50 €</span>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Αριάνι 1L</span>
+                    <span class="item-price">6,00 €</span>
+                </div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Pepsi Cola 250ml</span>
+                    <span class="item-price">2,00 €</span>
+                </div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Pepsi Cola max 250ml</span>
+                    <span class="item-price">2,00 €</span>
+                </div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">7up 250ml</span>
+                    <span class="item-price">2,00 €</span>
+                </div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Σουρωτή 250ml</span>
+                    <span class="item-price">2,00 €</span>
+                </div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Πορτοκαλάδα 250ml</span>
+                    <span class="item-price">2,00 €</span>
+                </div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Λεμονάδα 250ml</span>
+                    <span class="item-price">2,00 €</span>
+                </div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Χυμός φρούτων 250ml</span>
+                    <span class="item-price">2,50 €</span>
+                </div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-main">
+                    <span class="item-name">Κρύο τσάι (με λεμόνι ή ροδάκινο) 500ml</span>
+                    <span class="item-price">3,00 €</span>
+                </div>
+            </div>
+            
+            
+            <div class="menu-item highlight-item">
+                <div class="item-main">
+                    <span class="item-name">Αναψυκτικό με μαστίχα Χίου</span>
+                    <span class="item-price">3,50 €</span>
+                </div>
+            </div>
+
+        
+        </div>
+    </div>
+    
+        </section>
+    </main>
+    
+    <!-- ΚΟΥΜΠΙ ΕΠΙΣΤΡΟΦΗΣ ΣΤΗΝ ΚΟΡΥΦΗ -->
+<button id="backToTopBtn" title="Επιστροφή στην κορυφή">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 14l5-5 5 5H7z"/></svg>
+</button>
+
+<!-- ΚΟΥΜΠΙ ΠΟΥ ΣΕ ΠΗΓΑΙΝΕΙ ΣΤΟ ΑΓΓΛΙΚΟ ΜΕΝΟΥ -->
+<a id="autoTranslateBtn" href="translate.html" title="Translate to English">
+    <!-- Κυκλική Σημαία Μεγάλης Βρετανίας σε SVG -->
+    <svg viewBox="0 0 24 24" width="24" height="24">
+        <path d="M0 0h24v24H0z" fill="#00247d"/>
+        <path d="M0 0l24 24M24 0L0 24" stroke="#fff" stroke-width="4"/>
+        <path d="M0 0l24 24M24 0L0 24" stroke="#cf142b" stroke-width="2"/>
+        <path d="M12 0v24M0 12h24" stroke="#fff" stroke-width="6"/>
+        <path d="M12 0v24M0 12h24" stroke="#cf142b" stroke-width="4"/>
+    </svg>
+</a>
+
+
+    <!-- Footer Notes -->
+    <footer class="menu-footer">
+        <p>* ΚΑΤΕΨΥΓΜΕΝΟ | ΤΟ ΛΑΔΙ ΠΟΥ ΧΡΗΣΙΜΟΠΟΙΕΙΤΑΙ ΣΤΟ ΜΑΓΕΙΡΕΜΑ ΕΙΝΑΙ ΕΞΤΡΑ ΠΑΡΘΕΝΟ ΕΛΑΙΟΛΑΔΟ</p>
+        <p>Ο ΚΑΤΑΝΑΛΩΤΗΣ ΔΕΝ ΕΧΕΙ ΥΠΟΧΡΕΩΣΗ ΝΑ ΠΛΗΡΩΣΕΙ ΕΑΝ ΔΕΝ ΛΑΒΕΙ ΤΟ ΝΟΜΙΜΟ ΠΑΡΑΣΤΑΤΙΚΟ ΣΤΟΙΧΕΙΟ</p>
+        <p class="branding">© 2026 Μεζέ από την Πόλη — Καλή σας Όρεξη</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
